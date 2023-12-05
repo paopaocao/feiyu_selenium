@@ -1,0 +1,66 @@
+base_url: https://www.feishu.cn
+login_url: login.feishu.cn
+user:
+  user_mobile: 18804905606
+  user_password: 1999623cao
+home_page:
+  # 遮盖
+  mask:
+    popup: {class : hc_Popup}
+    mask_close: {css : "[data-elem-id='IFnHep2Rb0']"}
+  # 首页元素
+  to_msg:
+    # 消息
+    container_list: {class : _pp-product-container}
+    grid_list: {class : _pp_grid_list}
+  to_login:
+    button: {class : ftHeader_ExtraButton}
+
+login_page:
+  # 等待页面加载
+  wait_page: {class : new-account-login-box}
+  # 登陆方法
+  to_mobile_login: {class : switch-login-mode-box}
+  # 手机号输入框
+  input_mobile: {css : "input[name='mobile_input']"}
+  # 同意服务
+  check_policy: {class : ud__checkbox}
+  # 手机号登录下一步
+  next_to_password: {css : "button[data-test='login-phone-next-btn']"}
+  # 密码输入框
+  input_password: {css : "input[name='password_input']"}
+  # 登陆
+  login_button: {css : "button[data-test='login-pwd-next-btn']"}
+
+msg_page:
+  friend_name: tester2(tester2)
+  send_test_msg: "博彦面试候选人曹轩硕发送，测试文本，测试测试"
+  # 整个页面元素
+  layout_content: {class : appLayout-content}
+  # 用户信息集合
+  user_msg_items: {class : list_items}
+  # 聊天页面
+  chat_sidebar: {class : chatSidebar}
+  # edit
+  msg_edit: {class : lark-editor-container}
+
+  # 导航
+  nav:
+    # 通讯录
+    address_box: {css : "section[data-tip='tip-contacts']"}
+  # 侧边栏
+  slider:
+    feed: {class : feed}
+    # 用户信息
+    user_item: {css : "div[role='listitem']"}
+    user_lable_name : aria-label
+    address: {css : "section[data-tip='tip-contacts']"}
+
+  # 通讯录
+  address:
+    # 外部联系人
+    ext_contacts: {class : EXTERNAL_CONTACT}
+    # 用户姓名
+    user_name: {class : nameStatus_name}
+    # 联系svg
+    send_msg: {class : larkc-usercard__cta-button}
